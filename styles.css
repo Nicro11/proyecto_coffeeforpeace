@@ -1,0 +1,252 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo general */
+body {
+    background-color: #332E2E;
+    color: #F5F5F5;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    top: 0; /* Lo posiciona en la parte superior de la página. */
+    width: 100%; /* Abarca todo el ancho de la ventana. */
+    padding: 10px 20px; /* Espaciado interno para los elementos del encabezado. */
+    display: flex; /* Utiliza diseño flexible para organizar los elementos horizontalmente. */
+    justify-content: space-between; /* Distribuye los elementos en extremos opuestos. */
+    align-items: center; /* Alinea verticalmente los elementos del encabezado. */
+    background-color: #C03A2D;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #EA2411;
+}
+
+/* Secciones principales */
+main section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #413130;
+}
+
+/* Inicio */
+.begining {
+    background-color: #6B413D;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;         /* Centrado vertical */
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;             /* Para que sea responsivo */
+    text-align: left;
+}
+
+.begining h2 {
+    color: #EA2411;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.begining p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.begining img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.begining > div {
+    flex: 1 1 50%;
+}
+
+
+#productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #413130;
+}
+
+.tarjeta {
+    background-color: #96443C;
+    border-radius: 10px;
+    padding: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.03);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+    color: #F5F5F5;
+    font-size: 1.2rem;
+}
+
+
+/* Conócenos */
+.caja {
+    background-color: #6B413D;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.caja .contenido-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.caja h2 {
+    color: #EA2411;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.caja p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.caja img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+    flex: 1;
+}
+
+
+/* Trending */
+
+#trending {
+  background-color: #413130;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#trending h2 {
+  width: 100%;
+  color: #EA2411;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.card {
+  background-color: #96443C;
+  border-radius: 10px;
+  padding: 20px;
+  width: 380px;
+  height: 600px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: #F5F5F5;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #332E2E;
+    padding: 30px 20px;
+    text-align: center;
+    color: #fff;
+    border-top: 2px solid #413130;
+}
+
+footer a {
+    color: #EA2411;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer h3 {
+    margin-top: 20px;
+    color: #C03A2D;
+}
